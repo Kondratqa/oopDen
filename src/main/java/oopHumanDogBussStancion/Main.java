@@ -23,7 +23,7 @@ public class Main {
         Passenger human5 = new Passenger();
         human5.name = "Деда)";
 
-        Char myChar = new Char();
+        Sign myChar = new Sign();
         myChar.separator = "-------------------------------------------------";
 
         Buss myBuss = new Buss();
