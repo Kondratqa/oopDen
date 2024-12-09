@@ -23,7 +23,7 @@ public class Main {
         Passenger human5 = new Passenger();
         human5.name = "Деда)";
 
-        Sign myChar = new Sign();
+        Sign myChar = new Sign(); // объект разделителя по станциям
         myChar.separator = "-------------------------------------------------";
 
         Buss myBuss = new Buss();
