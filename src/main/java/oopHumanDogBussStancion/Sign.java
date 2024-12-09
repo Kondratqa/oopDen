@@ -4,7 +4,7 @@ public class Sign {
     public String separator; // разделитель
     
     public void hyphen(){
-        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("======================================================================================");
     }
 }
  
