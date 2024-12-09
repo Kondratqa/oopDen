@@ -27,7 +27,7 @@ public class Buss {
         System.out.println("Автобус марки " + model);
     }
     public void beep(){
-        System.out.println("сигналит, оповещая пвссажиров о прибытии");
+        System.out.println("Сигналит, оповещая пвссажиров о прибытии");
 
     }
     
