@@ -1,4 +1,4 @@
-package oopHumanDogGetSetTask;
+package oopHumanDogBussStancion;
 
 public class Passenger {
     public String name;
