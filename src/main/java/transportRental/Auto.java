@@ -2,9 +2,12 @@ package transportRental;
 
 public class Auto {
 
-    public String model; // модель авто
+    private String model; // модель авто
 
-    public void model(){
-        System.out.println("Машина марки " + model);
+    public void setModel(String newModel){
+        model = newModel;
+    }
+    public void aboutModel(){
+        System.out.println("Марка авто " + model);
     }    
 }
