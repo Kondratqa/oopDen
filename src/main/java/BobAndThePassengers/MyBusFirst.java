@@ -6,7 +6,7 @@ public class MyBusFirst {
 
         myBuss.setNumberSeatsBus(100);
         myBuss.setNumberPassengersBus(14);
-        myBuss.setTheTumberOfPassengersWishingToBoardTheBus(87);
+        myBuss.setTheTumberOfPassengersWishingToBoardTheBus(147);
         myBuss.setExtraPassengers(0);
         myBuss.setNumberFreeSeatsBus(0);
         
