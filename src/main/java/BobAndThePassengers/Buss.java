@@ -63,6 +63,7 @@ public class Buss {
     }
     public void setNumberFreeSeatsBus(int newNumberFreeSeatsBus){
         numberFreeSeatsBus = newNumberFreeSeatsBus;
+        numberFreeSeatsBus = numberSeatsBus - numberPassengersBus;
     }
     
     public void numberSeatsBus(){
@@ -75,10 +76,10 @@ public class Buss {
         System.out.println("ожидают посадки " + theTumberOfPassengersWishingToBoardTheBus);
     }
     public void extraPassengers(){
-        System.out.println(theTumberOfPassengersWishingToBoardTheBus);
+        System.out.println("лишние пассажиры " + (theTumberOfPassengersWishingToBoardTheBus - numberFreeSeatsBus));
     }
     public void numberFreeSeatsBus(){
-        System.out.println(numberSeatsBus - numberPassengersBus);
+        System.out.println("свободные места в автобусе " + numberFreeSeatsBus);
     }
     
 }
