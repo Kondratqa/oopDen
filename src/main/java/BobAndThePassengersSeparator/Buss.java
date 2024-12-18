@@ -1,16 +1,4 @@
 package BobAndThePassengersSeparator;
-/* Боб работает водителем автобуса. Однако он стал чрезвычайно популярен среди жителей города. 
-При таком количестве пассажиров, желающих сесть в его автобус, ему иногда приходится сталкиваться 
-с проблемой нехватки места в автобусе! Он хочет, чтобы вы написали простую программу, сообщающую ему, 
-сможет ли он вместить всех пассажиров.
-
-Обзор задачи:
-Вам нужно написать функцию, которая принимает три параметра:
-
-cap — количество людей, которых может вместить автобус, не считая водителя.
-on — количество людей в автобусе, не считая водителя.
-wait — количество людей, ожидающих посадки в автобус, не считая водителя.
-Если места достаточно, верните 0, а если нет, верните количество пассажиров, которых он не может взять.*/
 public class Buss {    
     private int numberSeatsBus; // количество мест в автобусе 100
     private int numberPassengersBus; // количество пассажиров в автобусе 14
@@ -30,7 +18,6 @@ public class Buss {
         numberSeatsBus = newNumberSeatsBus;
     }
     //-----------------------------------------------------------------------    
-    
     public int getNumberPassengersBus(){
         return numberPassengersBus;
     }
@@ -38,15 +25,13 @@ public class Buss {
         numberPassengersBus = newNumberPassengersBus;
     }
     //-----------------------------------------------------------------------    
-    
     public int getTheTumberOfPassengersWishingToBoardTheBus(){
         return theTumberOfPassengersWishingToBoardTheBus;
     }
     public void setTheTumberOfPassengersWishingToBoardTheBus(int newTheTumberOfPassengersWishingToBoardTheBus){
         theTumberOfPassengersWishingToBoardTheBus = newTheTumberOfPassengersWishingToBoardTheBus;
     }
-    //-----------------------------------------------------------------------
-    
+    //-----------------------------------------------------------------------    
     public int getNumberFreeSeatsBus(){
         return numberFreeSeatsBus;
     }
@@ -54,8 +39,7 @@ public class Buss {
         
         numberFreeSeatsBus = numberSeatsBus - numberPassengersBus;
     }
-    //-----------------------------------------------------------------------
-    
+    //-----------------------------------------------------------------------    
     public void numberSeatsBus(){
         System.out.println("Общее количество мест в автобусе " + numberSeatsBus);
     }
