@@ -9,11 +9,19 @@ public class MyBusFirst {
         // myBuss.setTheTumberOfPassengersWishingToBoardTheBus(112);
         myBuss.setExtraPassengers(0);
         myBuss.setNumberFreeSeatsBus(0);
+
+        Separator mySeparator = new Separator();
         
+        mySeparator.hyphen1();
         myBuss.numberSeatsBus();
+        mySeparator.hyphen1();
         myBuss.numberPassengersBus();
-        myBuss.theTumberOfPassengersWishingToBoardTheBus();        
+        mySeparator.hyphen1();
+        myBuss.theTumberOfPassengersWishingToBoardTheBus();
+        mySeparator.hyphen1();        
         myBuss.numberFreeSeatsBus();
+        mySeparator.hyphen1();
         myBuss.extraPassengers();
+        mySeparator.hyphen1();
     }    
 }
