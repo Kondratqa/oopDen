@@ -6,7 +6,7 @@ package cubConstructor;
 public class Cuboid {
     private double height; // высота куба
     private double width; // ширина куба
-    private double length; //длина куба    
+    private double length; // длина куба    
     
     public Cuboid(double length, double width, double height){
         this.height = height;
