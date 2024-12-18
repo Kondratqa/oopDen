@@ -14,20 +14,13 @@ wait — количество людей, ожидающих посадки в �
 public class Buss {    
     private int numberSeatsBus; // количество мест в автобусе 100
     private int numberPassengersBus; // количество пассажиров в автобусе 14
-    private int theTumberOfPassengersWishingToBoardTheBus; // количество пассажиров которое ожидает посадки в автобус 147
-    private int extraPassengers; // = theTumberOfPassengersWishingToBoardTheBus - numberSeatsBus; // лишние пассажиры
-    private int numberFreeSeatsBus; // = numberSeatsBus - numberPassengersBus; // количество свободных мест в автобусе 
-    
-
-    public Buss(){
-    }
-    
-    public Buss(int numberSeatsBus, int numberPassengersBus, int theTumberOfPassengersWishingToBoardTheBus, int extraPassengers, int numberFreeSeatsBus){        
+    private int theTumberOfPassengersWishingToBoardTheBus; // количество пассажиров которое ожидает посадки в автобус 147    
+    private int numberFreeSeatsBus; // = numberSeatsBus - numberPassengersBus; // количество свободных мест в автобусе
+     
+    public Buss(int numberSeatsBus, int numberPassengersBus, int theTumberOfPassengersWishingToBoardTheBus){        
         this.numberSeatsBus = numberSeatsBus; // количество пассажиров в автобусе 14
         this.numberPassengersBus = numberPassengersBus; // количество мест в автобусе 100        
-        this.theTumberOfPassengersWishingToBoardTheBus = theTumberOfPassengersWishingToBoardTheBus; // количество пассажиров которое ожидает посадки в автобус 147       
-        // this.extraPassengers = extraPassengers; // лишние пассажиры
-        // this.numberFreeSeatsBus = numberFreeSeatsBus; // количество свободных мест в автобусе
+        this.theTumberOfPassengersWishingToBoardTheBus = theTumberOfPassengersWishingToBoardTheBus; // количество пассажиров которое ожидает посадки в автобус 147
     }
 
     public int getNumberSeatsBus(){
@@ -53,18 +46,12 @@ public class Buss {
         theTumberOfPassengersWishingToBoardTheBus = newTheTumberOfPassengersWishingToBoardTheBus;
     }
     //-----------------------------------------------------------------------
-    public int getExtraPassengers(){
-        return extraPassengers;
-    }
-    public void setExtraPassengers(int newExtraPassengers){
-        extraPassengers = newExtraPassengers;
-    }
-    //-----------------------------------------------------------------------
+    
     public int getNumberFreeSeatsBus(){
         return numberFreeSeatsBus;
     }
-    public void setNumberFreeSeatsBus(int newNumberFreeSeatsBus){
-        numberFreeSeatsBus = newNumberFreeSeatsBus;
+    public void calcNumberFreeSeatsBus(){
+        
         numberFreeSeatsBus = numberSeatsBus - numberPassengersBus;
     }
     //-----------------------------------------------------------------------
@@ -83,6 +70,5 @@ public class Buss {
     }
     public void numberFreeSeatsBus(){
         System.out.println("Свободные места в автобусе " + numberFreeSeatsBus);
-    }
-    
+    }    
 }

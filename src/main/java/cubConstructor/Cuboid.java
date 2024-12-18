@@ -6,48 +6,14 @@ package cubConstructor;
 public class Cuboid {
     private double height; // высота куба
     private double width; // ширина куба
-    private double length; //длина куба
-    private double volume; // объём куба
+    private double length; //длина куба    
     
-    
-    public Cuboid(){ 
-
-    }
     public Cuboid(double length, double width, double height){
         this.height = height;
         this.width = width;
-        this.length = length;
-        
-        
-    }
-    public double getHeight(){
-        return height;
-    }
-    public void setHeight(double newHeight){
-        height = newHeight;
-    }
-    public double getWidth(){
-        return width;
-    }
-    public void setWidth(double newWidth){
-        width = newWidth;
-    }
-
-    public double getLength(){
-        return length;
-    }
-    public void setLenght(double newLenght){
-        length = newLenght;
-    }
-    public double getVolume(){
-        return volume;
-    }
-    public void setVolume(double newVolume){
-        volume = newVolume;
-    }
-    
-    public void volume(){
-        System.out.println(height * height * length);
+        this.length = length;  
     }    
-    
+    public double volume(){
+        return height * width * length;
+    }   
 }
