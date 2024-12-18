@@ -1,4 +1,4 @@
-package BobAndThePassengers;
+package BobAndThePassengersSeparator;
 
 public class MyBusFirst {
     public static void main(String[] args){
