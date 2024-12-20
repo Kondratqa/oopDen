@@ -6,5 +6,6 @@ public class MyFirstAnimal {
 
         myAnimal.calculateFoodRequirement();
         myAnimal.celebrateBirthday();
+        myAnimal.calculateFoodRequirement1();
     }
 }
