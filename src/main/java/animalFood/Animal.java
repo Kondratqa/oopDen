@@ -25,6 +25,14 @@ public class Animal {
    public void calculateFoodRequirement(){
       double amountFeedDay;
       amountFeedDay = (double) ((weight * 5) / 100);
+      
       System.out.println("Нашему бычку по имени " + name + " " + age + " года, в день ему требуется " + amountFeedDay + " кг комбикорма");
+   
+   }
+   public void celebrateBirthday(){
+      age++;      
+      
+      System.out.println("У нашего бычка " + name + " сегодня день рождения и ему исполняется " + age + " лет");      
+   
    }
 }
