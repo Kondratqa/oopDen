@@ -26,7 +26,7 @@ public class Animal {
       double amountFeedDay;
       amountFeedDay = (double) ((weight * 5) / 100);
       
-      System.out.println("Нашему бычку по имени " + name + " " + age + " года, в день ему требуется " + amountFeedDay + " кг комбикорма");
+      System.out.println("Нашему бычку по имени " + name + " " + age + " года, его вес " + weight +" кг, в день ему требуется " + amountFeedDay + " кг комбикорма");
    
    }
    public void celebrateBirthday(){
@@ -41,6 +41,6 @@ public class Animal {
       amountFeedDay = (double) ((weight * 5) / 100);      
       
       System.out.println("Нашему бычку по имени " + name + " теперь " + age + " лет, и в день теперь ему требуется " + amountFeedDay + " кг комбикорма");
-      System.out.println("Наш бычек весит " + weight + " кг");
+      System.out.println("Наш бычек в " + age + " лет весит " + weight + " кг");
    }
 }
